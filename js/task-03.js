@@ -12,3 +12,18 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+const parentOfList = document.querySelector('#gallery');
+console.log(parentOfList);
+
+
+const listOfGallery = images.map(item => `<li class="gallerry__item"><img src="${item.url}" alt="${item.alt}"></li>`);
+console.log(listOfGallery);
+
+
+
+
+// parentOfList.insertAdjacentHTML('afterbegin', `<li><img src="https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Orange and White Koi Fish Near Yellow Koi Fish" ></img></li>`);
+
+parentOfList.insertAdjacentHTML('afterbegin', listOfGallery.join(""));

@@ -7,11 +7,30 @@
     <title>Задание 3</title>
     <style>
       body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         background-color: #fff;
         color: #424242;
         line-height: 1.5;
+      }
+
+      #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+      }
+      .gallerry__item img {
+        width: 100%;
+      }
+
+      .gallerry__item {
+        width: 30%;
+        display: flex;
+        position: relative;
+        margin-left: 30px;
+        margin-top: 30px;
+        flex-basis: calc((100% - 90px) / 3);
       }
     </style>
   </head>
